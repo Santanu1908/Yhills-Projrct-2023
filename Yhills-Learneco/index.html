@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital@1&family=Wix+Madefor+Display&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="/imgs/img-6.png" type="image">
+    <link rel="icon" href="/imgs/img-6.png" type="image">
+    <title>Learneco</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h2 class="Platform-name"><img src="/imgs/img-6.png" class="img">&nbspLearneco</h2>
+        <ul class="navbar-list">
+            <li class="nvbar-list-item"><a href="index.html">Home</a></li>
+            <li class="nvbar-list-item"><a href="#all__courses">Courses</a></li>
+            <li class="nvbar-list-item"><a href="#">About</a></li>
+            <li class="nvbar-list-item"><a href="#">Contact</a></li>
+        </ul>
+        <button id="toggle__navbar__btn"><i class="fa-solid fa-bars"></i></button>
+    </nav>
+
+    <!-- Slider main container -->
+    <div class="note"><h1>Learn<br>With Us!</h1></div>
+    <div class="slider">
+        <!-- Additional required wrapper -->
+        
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="/imgs/img-1.png" alt="image 1"></div>
+            <div class="swiper-slide"><img src="/imgs/img-2.png" alt="image 2"></div>
+            <div class="swiper-slide"><img src="/imgs/img-3.png" alt="image 3"></div>
+            <div class="swiper-slide"><img src="/imgs/img-4.png" alt="image 4"></div>
+            <div class="swiper-slide"><img src="/imgs/img-5.png" alt="image 5"></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Trending Courses Section -->
+
+    <div class="course__wrapper">
+        <section class="courses__section">
+            <h1 class="section__title">Most demanded Course</h1>
+            <div class="courses__cards" id="trending__cards">
+            </div>
+        </section>
+    
+        <!-- All Courses Section -->
+        <section class="courses__section" id="all__courses">
+            <h1 class="section__title">All Courses</h1>
+            <div class="courses__cards" id="all__courses__cards"> </div>
+        </section>
+    </div>
+    
+    <!-- Contact Section -->
+    
+    <div class="contact-sec">
+        <section class="contact" id="contact">
+            <div class="main-contact">
+              <div class="contact-content">
+                <li class="logo"><img src="/imgs/img-6.png" /><p>Learneco</p></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+              </div>
+      
+              <div class="contact-content">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </div>
+      
+              <div class="contact-content">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Instructor</a></li>
+                <li><a href="#">Dashboard</a></li>
+              </div>
+      
+              <div class="contact-content">
+                <li>
+                  <a href="#"
+                    >San Francisco,<br />
+                    California, CA 94108</a
+                  >
+                </li>
+                <li><a href="#">dreamslms@example.com</a></li>
+                <li><a href="#">01646895741</a></li>
+              </div>
+            </div>
+          </section>
+    </div>
+
+    <script src="./script/script.js" type="module"></script>
+</body>
+
+</html>

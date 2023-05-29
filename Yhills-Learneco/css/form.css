@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+:root {
+    --clr-primary: #2A2A2A;
+    --clr-secondary: #FFFFFF;
+    --clr-accent: #6554C0;
+    --clr-container: rgba(255, 255, 255, 0.8);
+}
+
+.dark-theme {
+    --clr-primary: #FFFFFF;
+    --clr-secondary: #161a1d;
+    --clr-container: #21272c;
+}
+
+
+/*  ========== User Form ========== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    
+    background-color: rgb(196, 251, 255);
+    display: flex;
+}
+.left-sec .form-img{
+    margin-top: 4rem;
+    margin-left: 2rem;
+    height: 90vh;
+    opacity: 0.8;
+}
+.right-sec{
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    right: 15%;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.brand-name {
+    color:  rgb(253, 151, 17);
+    margin-left: 5rem;
+    margin-top: 4rem;
+}
+
+.user-form {
+    background-color: rgb(80, 28, 201);
+    display: block;
+    padding: 1rem;
+    margin-top: 0%;
+    max-width: min(350px, 90vw);
+    height: 25rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 3px 100px -47px rgba(0, 0, 0, 0.9), 0 15px 65px 6px rgba(0, 0, 0, 0.9);
+    z-index: 5;
+}
+
+.form-title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-align: center;
+    color: whitesmoke
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-container input,
+.form button {
+    outline: none;
+    border: 1px solid #e5e7eb;
+    margin: 8px 0;
+}
+
+.input-container input {
+    background-color: var(--clr-secondary);
+    color: var(--clr-primary);
+    padding: 1rem;
+    padding-right: 3rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    width: 300px;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+.submit {
+    display: block;
+    margin-top: 30px;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    background-color: rgb(255, 167, 52);
+    /* color: #ffffff; */
+    color: rgb(80, 28, 201);;
+    font-size: 1.1rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    width: 100%;
+    border-radius: 20px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+}
+
+/* To remove input type number default array */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}

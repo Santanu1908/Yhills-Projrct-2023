@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&family=Wix+Madefor+Display&display=swap');
+
+:root {
+    --clr-primary: #2A2A2A;
+    --clr-secondary: #FFFFFF;
+    --clr-accent: #6554C0;
+    --clr-container: rgb(221, 221, 221);
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--clr-secondary);
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: aquamarine;
+    max-width: 100vw;
+}
+
+/*  ========== Navbar CSS ========== */
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    background-color: rgb(255, 167, 52);
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.Platform-name {
+    color: #8102ff;
+    display: flex;
+    font-size: 31px;
+    font-weight: 600, bold;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;
+    margin-top: 0px;
+}
+.Platform-name .img{
+    width: 35px;
+    height: 35px;
+    margin-top: 2px;
+}
+#toggle__navbar__btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.navbar-list {
+    width: 31%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 2.5rem;
+    transition: height 1s ease;
+    -webkit-transition: height 1s ease;
+    -moz-transition: height 1s ease;
+    -ms-transition: height 1s ease;
+    -o-transition: height 1s ease;
+}
+
+.navbar-list .nvbar-list-item>* {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.note{
+    /* border: 1px solid red; */
+    position: absolute;
+    width: 29.5rem;
+    height: 35rem;
+    font-size: 3rem;
+    padding-top: 10rem;
+    padding-left: 4rem;
+    color: rgb(47, 78, 255);
+}
+
+/*  ========== Swiper CSS ========== */
+.slider {
+    width: 65%;
+    max-width: 100%;
+    height: 35rem;
+    /* aspect-ratio: 16 / 6; */
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    /* position: relative; */
+    display: flex;
+    /* left: 0; */
+    margin-top: 0px;
+    background-color: aquamarine;
+    /* border: 1px solid blue; */
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    height: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+/* .swiper-button-next,
+.swiper-button-prev {
+    color: var(--clr-primary);
+    font-weight: bold;
+    font-size: 1rem;
+} */
+
+/*  ========== Trending Section CSS ========== */
+
+.course__wrapper{
+    margin-top: 40rem;
+    /* border: 1px solid yellow; */
+}
+.courses__section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    margin-bottom: 130px;
+    /* border: 1px solid black; */
+    background-color: azure;
+    font-size: 2rem;
+}
+
+.section__title {
+    color: var(--clr-primary);
+}
+
+.courses__cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.courses__section .card {
+    width: 300px;
+    aspect-ratio: 1;
+    background-color: rgb(67, 121, 236);
+    border-radius: 0.5rem;
+    transition: all 0.1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.courses__section .card:hover {
+    transform: scale(1.03);
+}
+
+.complete__mark:not(:empty) {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    background-color: var(--clr-accent);
+    border-radius: 0.5rem 0 0.5rem 0;
+    -webkit-border-radius: 0.5rem 0 0.5rem 0;
+    -moz-border-radius: 0.5rem 0 0.5rem 0;
+    -ms-border-radius: 0.5rem 0 0.5rem 0;
+    -o-border-radius: 0.5rem 0 0.5rem 0;
+    padding: 0.2rem;
+    color: #FFFFFF;
+}
+
+.card__image {
+    max-width: 100%;
+    height: 70%;
+    object-fit: contain;
+    /* z-index: -2; */
+}
+
+.card__title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--clr-primary);
+}
+
+
+/*  ========== Contact Section CSS ========== */
+
+.contact {
+    padding: 60px 3%;
+    background: var(--bg-color);
+    margin-top: -4rem;
+    background-color: rgb(208, 223, 255);
+  }
+  .main-contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 1rem;
+    width: 100vw;
+    padding-top: 7px;
+  }
+  .contact-content img {
+    height: auto;
+    width: 40px;
+    height: 40px;
+    /* max-width: 100%; */
+    margin-bottom: 30px;
+  }
+  .contact-content .logo{
+    display: flex;
+    margin-bottom: -10px;
+  }
+  .contact-content p{
+    padding-top: 0px;
+    font-size: 2.3rem;
+    color: #8102ff;
+    font-weight: 500;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;
+  }
+  .contact-content li {
+    margin-bottom: 18px;
+    list-style: none;
+    
+  }
+  .contact-content li a {
+    display: block;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 17px;
+    transition: all 0.4s ease-out;
+    text-decoration: none;
+  }
+  .contact-content li a:hover {
+    transform: translateX(3px);
+    color: var(--main-color);
+  }
+
+/*  ========== Responsiveness CSS ========== */
+
+@media screen and (max-width: 600px) {
+
+    .slider {
+        width: 100%;
+        height: 25vh;
+        margin-top: 1rem;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        /* object-fit: cover; */
+    }
+
+    .navbar {
+        padding: 0rem 1rem;
+    }
+
+    #toggle__navbar__btn {
+        display: block;
+    }
+
+    .navbar-list {
+        height: 0px;
+        width: 100vw;
+        position: absolute;
+        flex-direction: column;
+        top: 40px;
+        left: 0;
+        z-index: 6;
+        background-color: var(--clr-accent);
+        gap: 1rem;
+        padding-bottom: 1rem;
+        overflow: hidden;
+        transition: all 0.2s ease;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -ms-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+    }
+
+    .navbar-list.show {
+        height: 170px;
+        top: 50px;
+    }
+
+    .nvbar-list-item {
+        width: 100%;
+    }
+
+    .nvbar-list-item>* {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .contact {
+        padding: 60px 3%;
+        transition: 0.2s;
+      }
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .navbar-list {
+        justify-content: end;
+    }
+
+    .courses__cards {
+        justify-content: center;
+    }
+}
